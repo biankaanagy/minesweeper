@@ -108,6 +108,11 @@
             <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.sonatype.sisu</groupId>
+            <artifactId>sisu-inject-bean</artifactId>
+            <version>1.4.2</version>
+        </dependency>
         <!--
         <dependency>
             <groupId>junit</groupId>
@@ -115,6 +120,18 @@
             <version>4.13.1</version>
             <scope>test</scope>
         </dependency> -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>5.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-persist</artifactId>
+            <version>5.0.1</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
