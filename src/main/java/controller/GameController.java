@@ -30,7 +30,7 @@ public class GameController {
         //resetGame();
     }
 
-    public void handleGiveUpFinishButton(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void handleGiveUpFinishButton(ActionEvent actionEvent) throws IOException {
         var buttonText = ((Button) actionEvent.getSource()).getText();
         Logger.debug("{} is pressed", buttonText);
         if (buttonText.equals("Give Up")) {

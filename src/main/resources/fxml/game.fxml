@@ -50,9 +50,9 @@
                     </VBox.margin>
                 </Label>
                 <Label text="Bombs:" />
-                <Label fx:id="stepsLabel" text="0" />
-                <Button mnemonicParsing="false" text="Reset" />
-                <Button mnemonicParsing="false" text="Give Up" />
+                <Label fx:id="bombsLabel" text="0" />
+                <Button fx:id="resetButton" mnemonicParsing="false" onAction="#handleResetButton" text="Reset" />
+                <Button fx:id="giveUpFinishButton" mnemonicParsing="false" onAction="#handleGiveUpFinishButton" text="Give Up" />
             </children>
         </VBox>
     </right>
