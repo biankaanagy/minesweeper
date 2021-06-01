@@ -37,11 +37,16 @@ public class GameController {
             //stopwatch.stop();
             Logger.info("The game has been given up");
         }
+
         Logger.debug("Saving result");
         //gameResultDao.persist(createGameResult());
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/highscores.fxml"));
+        Parent root = fxmlLoader.load();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        ControllerHelper.loadAndShowFXML(fxmlLoader, "/fxml/highscores.fxml", stage);
-        //FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/highscores.fxml"));
+        stage.setScene(new Scene(root));
+        stage.show();
+
     }
 
 }

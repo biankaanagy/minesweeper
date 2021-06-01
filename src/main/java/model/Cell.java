@@ -1,40 +1,27 @@
 package model;
-
+/**
+ * {@code Cell} representing squares on the board.
+ */
 public class Cell {
-    private final boolean bomb;
-    private boolean flagged, opened;
+    /**
+     * Square's value.
+     */
+    int value;
+    /**
+     * Square's opened or closed.
+     */
+    boolean opened;
+    /**
+     * Square's flagged or not.
+     */
+    boolean flag;
 
-    public Cell(boolean bomb, boolean flagged, boolean opened) {
-        this.bomb = bomb;
-        this.flagged = flagged;
+    /**
+     * {@code Cell} constructor.
+     */
+    public Cell(int value, boolean opened, boolean flag) {
+        this.value = value;
         this.opened = opened;
-    }
-
-    public Cell(boolean bomb) {
-        this(bomb, false, false);
-    }
-
-    public boolean isBomb() {
-        return bomb;
-    }
-
-    public boolean isFlagged() {
-        return flagged;
-    }
-
-    public void setFlagged(boolean flagged) {
-        this.flagged = flagged;
-    }
-
-    public boolean isOpened() {
-        return opened;
-    }
-
-    public void setOpened(boolean opened) {
-        this.opened = opened;
-    }
-
-    public void toggleFlag() {
-        flagged = ! flagged;
+        this.flag = flag;
     }
 }
