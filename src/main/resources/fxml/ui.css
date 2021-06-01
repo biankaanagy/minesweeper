@@ -1,0 +1,30 @@
+.square {
+    -fx-border-style: solid;
+    -fx-background-color: lightgray;
+}
+
+.squareOpened {
+    -fx-font-size: 30;
+    -fx-border-style: solid;
+    -fx-background-color: white;
+}
+
+.squareOpenedBomb {
+    -fx-font-size: 30;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+    -fx-border-color: red;
+    -fx-background-color: white;
+}
+
+.squareFlag {
+    -fx-font-size: 30;
+    -fx-border-style: solid;
+    -fx-background-color: rgba(255, 0, 0, 0.68);
+}
+/*
+.square:hover {
+    -fx-background-color: rgba(142, 145, 236, 0.55);
+    -fx-border-color: blue;
+}*/
+
