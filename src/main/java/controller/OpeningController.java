@@ -28,13 +28,13 @@ public class OpeningController {
         } else{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/game.fxml"));
             Parent root = fxmlLoader.load();
-            fxmlLoader.<GameController>getController();
+            fxmlLoader.<GameController>getController().setPlayerName(playerNameTextField.getText());
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
             Logger.info("The user's name is set to {}, loading game scene", playerNameTextField.getText());
         }
     }
-
+    
 
 }
